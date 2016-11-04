@@ -25,7 +25,7 @@ static NSString *cellID = @"cellId";
     collectionView.delegate = self;
     collectionView.dataSource = self;
     
-    [collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:cellID];
+    [collectionView registerClass:[DataCell class] forCellWithReuseIdentifier:cellID];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -45,15 +45,18 @@ static NSString *cellID = @"cellId";
     if (dataArray.count != 0) {
         return dataArray.count;
     }
-    return 0;
+    return 10;
 }
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellID forIndexPath:indexPath];
-    
+    UICollectionViewCell *cell = (DataCell *) [collectionView dequeueReusableCellWithReuseIdentifier:cellID forIndexPath:indexPath];
     return cell;
 }
 
+-(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    return CGSizeMake(self.collectionView.frame.size.width, 200);
+}
 
 @end

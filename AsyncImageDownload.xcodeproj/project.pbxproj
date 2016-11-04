@@ -15,6 +15,8 @@
 		FF5C28C91DCCCC1B007A65A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF5C28C71DCCCC1B007A65A9 /* LaunchScreen.storyboard */; };
 		FF5C28D41DCCCC1B007A65A9 /* AsyncImageDownloadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5C28D31DCCCC1B007A65A9 /* AsyncImageDownloadTests.m */; };
 		FF5C28DF1DCCCC1B007A65A9 /* AsyncImageDownloadUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5C28DE1DCCCC1B007A65A9 /* AsyncImageDownloadUITests.m */; };
+		FF5C28F01DCCD06C007A65A9 /* ImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5C28EF1DCCD06C007A65A9 /* ImageCell.m */; };
+		FF5C28F31DCCD196007A65A9 /* DataCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5C28F21DCCD196007A65A9 /* DataCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		FF5C28DA1DCCCC1B007A65A9 /* AsyncImageDownloadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AsyncImageDownloadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF5C28DE1DCCCC1B007A65A9 /* AsyncImageDownloadUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AsyncImageDownloadUITests.m; sourceTree = "<group>"; };
 		FF5C28E01DCCCC1B007A65A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF5C28EE1DCCD06C007A65A9 /* ImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCell.h; sourceTree = "<group>"; };
+		FF5C28EF1DCCD06C007A65A9 /* ImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCell.m; sourceTree = "<group>"; };
+		FF5C28F11DCCD196007A65A9 /* DataCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataCell.h; sourceTree = "<group>"; };
+		FF5C28F21DCCD196007A65A9 /* DataCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,8 @@
 		FF5C28B81DCCCC1B007A65A9 /* AsyncImageDownload */ = {
 			isa = PBXGroup;
 			children = (
+				FF5C28ED1DCCD01A007A65A9 /* Views */,
+				FF5C28EC1DCCD003007A65A9 /* Model */,
 				FF5C28BC1DCCCC1B007A65A9 /* AppDelegate.h */,
 				FF5C28BD1DCCCC1B007A65A9 /* AppDelegate.m */,
 				FF5C28BF1DCCCC1B007A65A9 /* ViewController.h */,
@@ -138,6 +146,24 @@
 				FF5C28E01DCCCC1B007A65A9 /* Info.plist */,
 			);
 			path = AsyncImageDownloadUITests;
+			sourceTree = "<group>";
+		};
+		FF5C28EC1DCCD003007A65A9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FF5C28EE1DCCD06C007A65A9 /* ImageCell.h */,
+				FF5C28EF1DCCD06C007A65A9 /* ImageCell.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		FF5C28ED1DCCD01A007A65A9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FF5C28F11DCCD196007A65A9 /* DataCell.h */,
+				FF5C28F21DCCD196007A65A9 /* DataCell.m */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,6 +300,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF5C28C11DCCCC1B007A65A9 /* ViewController.m in Sources */,
+				FF5C28F31DCCD196007A65A9 /* DataCell.m in Sources */,
+				FF5C28F01DCCD06C007A65A9 /* ImageCell.m in Sources */,
 				FF5C28BE1DCCCC1B007A65A9 /* AppDelegate.m in Sources */,
 				FF5C28BB1DCCCC1B007A65A9 /* main.m in Sources */,
 			);
