@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "ImageCell.h"
+#import "CustomImageView.h"
 
 @interface DataCell : UICollectionViewCell
 

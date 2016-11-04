@@ -10,7 +10,7 @@
 
 @implementation DataCell
 {
-    UIImageView *imgView;
+    CustomImageView *imgView;
     UILabel *titleLabel;
 }
 
@@ -35,13 +35,13 @@
 -(void)setImageCell:(ImageCell *)imageCell
 {
     _imageCell = imageCell;
+    [imgView loadImageWithUrl:_imageCell.urlString];
 }
 
 -(void)initViews
 {
-    imgView = [[UIImageView alloc] init];
+    imgView = [[CustomImageView alloc] init];
     imgView.translatesAutoresizingMaskIntoConstraints = false;
-    imgView.backgroundColor = [UIColor redColor];
     
     titleLabel = [[UILabel alloc] init];
     titleLabel.backgroundColor = [UIColor orangeColor];

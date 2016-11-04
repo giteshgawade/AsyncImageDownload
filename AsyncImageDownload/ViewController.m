@@ -36,6 +36,8 @@ static NSString *cellID = @"cellId";
 - (IBAction)loadData:(id)sender
 {
     dataArray = [[NSMutableArray alloc] init];
+    
+    // make a network call to get the json and parse into DataCell accordingly
 }
 
 #pragma mark CollectionView_Delegate_Datasource
@@ -48,9 +50,9 @@ static NSString *cellID = @"cellId";
     return 10;
 }
 
--(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
+-(UICollectionViewCell *)collectionView:(UICollectionView *)imgCollectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    UICollectionViewCell *cell = (DataCell *) [collectionView dequeueReusableCellWithReuseIdentifier:cellID forIndexPath:indexPath];
+    DataCell *cell = (DataCell *) [imgCollectionView dequeueReusableCellWithReuseIdentifier:cellID forIndexPath:indexPath];
     return cell;
 }
 

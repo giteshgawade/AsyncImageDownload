@@ -12,6 +12,7 @@
 @interface ViewController : UIViewController<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
+
 - (IBAction)loadData:(id)sender;
 
 @end

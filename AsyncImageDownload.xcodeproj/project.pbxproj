@@ -17,6 +17,8 @@
 		FF5C28DF1DCCCC1B007A65A9 /* AsyncImageDownloadUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5C28DE1DCCCC1B007A65A9 /* AsyncImageDownloadUITests.m */; };
 		FF5C28F01DCCD06C007A65A9 /* ImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5C28EF1DCCD06C007A65A9 /* ImageCell.m */; };
 		FF5C28F31DCCD196007A65A9 /* DataCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5C28F21DCCD196007A65A9 /* DataCell.m */; };
+		FF5C28F61DCCDF0B007A65A9 /* CustomImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5C28F51DCCDF0B007A65A9 /* CustomImageView.m */; };
+		FF5C28F91DCCE1E4007A65A9 /* Cache.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5C28F81DCCE1E4007A65A9 /* Cache.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,10 @@
 		FF5C28EF1DCCD06C007A65A9 /* ImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCell.m; sourceTree = "<group>"; };
 		FF5C28F11DCCD196007A65A9 /* DataCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataCell.h; sourceTree = "<group>"; };
 		FF5C28F21DCCD196007A65A9 /* DataCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataCell.m; sourceTree = "<group>"; };
+		FF5C28F41DCCDF0B007A65A9 /* CustomImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomImageView.h; sourceTree = "<group>"; };
+		FF5C28F51DCCDF0B007A65A9 /* CustomImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomImageView.m; sourceTree = "<group>"; };
+		FF5C28F71DCCE1E4007A65A9 /* Cache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cache.h; sourceTree = "<group>"; };
+		FF5C28F81DCCE1E4007A65A9 /* Cache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cache.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +113,8 @@
 		FF5C28B81DCCCC1B007A65A9 /* AsyncImageDownload */ = {
 			isa = PBXGroup;
 			children = (
+				FF5C28F71DCCE1E4007A65A9 /* Cache.h */,
+				FF5C28F81DCCE1E4007A65A9 /* Cache.m */,
 				FF5C28ED1DCCD01A007A65A9 /* Views */,
 				FF5C28EC1DCCD003007A65A9 /* Model */,
 				FF5C28BC1DCCCC1B007A65A9 /* AppDelegate.h */,
@@ -162,6 +170,8 @@
 			children = (
 				FF5C28F11DCCD196007A65A9 /* DataCell.h */,
 				FF5C28F21DCCD196007A65A9 /* DataCell.m */,
+				FF5C28F41DCCDF0B007A65A9 /* CustomImageView.h */,
+				FF5C28F51DCCDF0B007A65A9 /* CustomImageView.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -300,10 +310,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF5C28C11DCCCC1B007A65A9 /* ViewController.m in Sources */,
+				FF5C28F91DCCE1E4007A65A9 /* Cache.m in Sources */,
 				FF5C28F31DCCD196007A65A9 /* DataCell.m in Sources */,
 				FF5C28F01DCCD06C007A65A9 /* ImageCell.m in Sources */,
 				FF5C28BE1DCCCC1B007A65A9 /* AppDelegate.m in Sources */,
 				FF5C28BB1DCCCC1B007A65A9 /* main.m in Sources */,
+				FF5C28F61DCCDF0B007A65A9 /* CustomImageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
